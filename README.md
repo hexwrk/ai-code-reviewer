@@ -81,5 +81,9 @@ python src/security_scanner.py
 
 The scanner checks Python files only. It uses simple pattern matching, so it might miss complex issues or flag false positives.
 
-<img width="1854" height="1168" alt="Screenshot from 2026-01-17 12-51-30" src="https://github.com/user-attachments/assets/f0aa58ce-676f-49dc-9000-a0b33f46edb0" />
-<img width="1854" height="1168" alt="Screenshot from 2026-01-17 12-51-19" src="https://github.com/user-attachments/assets/a25ebe6e-18ac-4dbc-af44-d17df0ae7e2a" />
+
+
+<img width="1854" height="1168" alt="Screenshot from 2026-01-17 12-51-19" src="https://github.com/user-attachments/assets/e9013db4-6020-4756-b547-78476550d103" />
+
+<img width="1854" height="1168" alt="Screenshot from 2026-01-17 12-51-30" src="https://github.com/user-attachments/assets/1f0e0955-9a1d-45c1-a529-6ea2d79d113d" />
+
