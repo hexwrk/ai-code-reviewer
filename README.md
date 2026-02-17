@@ -12,8 +12,8 @@ Scans for common security problems:
 
 ## Installation
 ```bash
-git clone https://github.com/hexwrk/ai-code-reviewer.git
-cd ai-code-reviewer
+git clone https://github.com/hexwrk/security-pre-commit-scanner.git
+cd security-pre-commit-scanner
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -86,4 +86,5 @@ The scanner checks Python files only. It uses simple pattern matching, so it mig
 <img width="1854" height="1168" alt="Screenshot from 2026-01-17 12-51-19" src="https://github.com/user-attachments/assets/e9013db4-6020-4756-b547-78476550d103" />
 
 <img width="1854" height="1168" alt="Screenshot from 2026-01-17 12-51-30" src="https://github.com/user-attachments/assets/1f0e0955-9a1d-45c1-a529-6ea2d79d113d" />
+
 
