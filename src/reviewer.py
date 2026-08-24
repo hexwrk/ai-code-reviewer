@@ -84,9 +84,9 @@ def add(a, b):
     try:
         reviewer = CodeReviewer()
         result = reviewer.review_code(test_code, "test.py")
-        print(f"\nReview complete.")
+        print("\nReview complete.")
         print(f"Score: {result['score']}/100")
-        print(f"\nSuggestions:")
+        print("\nSuggestions:")
         for i, suggestion in enumerate(result['suggestions'], 1):
             print(f"{i}. {suggestion}")
     except Exception as e:

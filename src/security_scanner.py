@@ -16,6 +16,7 @@ class SecurityScanner:
             'sql_injection': [
                 (r'execute\s*\(\s*["\'].*%s.*["\']', 'Possible SQL injection vulnerability'),
                 (r'\.execute\s*\([^)]*\+[^)]*\)', 'SQL query concatenation detected'),
+                (r'["\']\s*(SELECT|INSERT|UPDATE|DELETE)\s+.*["\']\s*\+', 'SQL query built via string concatenation'),
             ],
             'command_injection': [
                 (r'os\.system\s*\(', 'Potentially unsafe os.system() call'),

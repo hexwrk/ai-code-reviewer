@@ -1,6 +1,5 @@
 import git
 import os
-from pathlib import Path
 from typing import List, Dict
 from src.security_scanner import SecurityScanner
 
@@ -25,7 +24,7 @@ class GitIntegration:
             for item in staged:
                 if item.a_path and item.a_path.endswith('.py'):
                     changed_files.append(item.a_path)
-        except:
+        except git.BadName:
             for item in self.repo.index.entries:
                 if item[0].endswith('.py'):
                     changed_files.append(item[0])
@@ -81,7 +80,7 @@ class GitIntegration:
         for file_data in results['files']:
             if not file_data['passed']:
                 lines.append(f"\nFile: {file_data['path']}")
-                lines.append(f"Status: FAIL")
+                lines.append("Status: FAIL")
                 
                 for issue in file_data['security_issues']:
                     lines.append(f"\n  Line {issue['line']}: {issue['message']}")
